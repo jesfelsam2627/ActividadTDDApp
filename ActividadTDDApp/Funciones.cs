@@ -8,7 +8,9 @@ namespace ActividadTDDApp
     {
         public long CalcularFactorial(int n)
         {
-            throw new NotImplementedException();
+            return n < 0 ? -1
+            : n == 0 ? 1
+            : Enumerable.Range(1, n).Aggregate(1L, (acc, x) => acc * x);
         }
     }
 }
