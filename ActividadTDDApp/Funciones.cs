@@ -6,6 +6,9 @@ namespace ActividadTDDApp
 {
     public class Funciones
     {
-
+        public long CalcularFactorial(int n)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
