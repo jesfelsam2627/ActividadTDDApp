@@ -15,7 +15,9 @@ namespace ActividadTDDApp
 
         public bool EsContrasenyaValida(string contrasenya)
         {
-            throw new NotImplementedException();
+            return !string.IsNullOrEmpty(contrasenya)
+            && contrasenya.Length >= 8
+            && contrasenya.Contains("#");
         }
     }
 }
