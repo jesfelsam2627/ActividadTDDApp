@@ -12,5 +12,10 @@ namespace ActividadTDDApp
             : n == 0 ? 1
             : Enumerable.Range(1, n).Aggregate(1L, (acc, x) => acc * x);
         }
+
+        public bool EsContrasenyaValida(string contrasenya)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
